@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKC Structural Consultants | Expert Engineering Services</title>
+    <meta name="description" content="SKC Structural Consultants provides expert services in structural design, drawings, planning, estimation, site supervision, and more. Led by Er. Sushendhu K C in Perinthalmanna, Malappuram.">
+    <meta name="keywords" content="structural design, structural engineering, building permit, site supervision, estimation, valuation, SKC Consultants, Sushendhu K C, Perinthalmanna, Malappuram">
+    <meta name="author" content="SKC Structural Consultants">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-dark': '#0a0a0a',
+              'brand-dark-2': '#1a2e2c',
+              'brand-green': '#065f46',
+              'brand-green-light': '#059669',
+              'brand-orange': '#f59e0b',
+              'brand-gray': '#f8fafc',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style type="text/tailwindcss">
+        body {
+            @apply bg-brand-gray text-brand-dark font-sans;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="assets/skc-logo.png" alt="SKC Logo" class="h-12 w-auto" />
+                <span class="hidden sm:block text-xl font-bold text-brand-dark">SKC Structural Consultants</span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Home</a>
+                <a href="#services" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Services</a>
+                <a href="#about" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">About</a>
+                <a href="#projects" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Projects</a>
+                <a href="#contact" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden lg:inline-block bg-brand-orange text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">Get a Quote</a>
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="text-brand-dark focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="lg:hidden transition-max-height duration-500 ease-in-out overflow-hidden max-h-0">
+            <nav class="flex flex-col items-center space-y-4 py-4 bg-white">
+                <a href="#home" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Home</a>
+                <a href="#services" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Services</a>
+                <a href="#about" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">About</a>
+                <a href="#projects" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Projects</a>
+                <a href="#contact" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Contact</a>
+                <a href="#contact" class="bg-brand-orange text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+            <img src="./assets/hero-bg.jpg" alt="Modern architectural structure" class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-20 container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">Engineering Structures <br> for a <span class="text-brand-orange">Better Tomorrow</span></h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Your trusted partner in structural design, planning, and supervision, delivering excellence and precision in every project.</p>
+                <a href="#contact" class="bg-brand-orange text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-50 transition-all duration-300 transform hover:scale-105">Contact Us Today</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-brand-dark">Our Services</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">We provide a comprehensive range of structural consulting services to ensure your project's success.</p>
+                    <div class="mt-4 w-24 h-1 bg-brand-orange mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Structural Design</h3>
+                        <p class="text-gray-600 leading-relaxed">Innovative and safe structural designs tailored to your project's needs, ensuring stability and longevity.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Structural Drawings</h3>
+                        <p class="text-gray-600 leading-relaxed">Detailed and precise structural drawings that serve as the blueprint for flawless construction.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503-6.998l4.875-2.437a.38.38 0 01.54.325v12.375a.375.375 0 01-.54.325L18 18.75m-5.25.5-4.875-2.438a.375.375 0 01-.16-.325V6.438a.375.375 0 01.54-.325L12.75 8.25" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Plan</h3>
+                        <p class="text-gray-600 leading-relaxed">Comprehensive project planning services from concept to completion for seamless execution.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Estimation</h3>
+                        <p class="text-gray-600 leading-relaxed">Accurate cost estimation and budgeting to keep your project financially on track.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Site Supervision</h3>
+                        <p class="text-gray-600 leading-relaxed">Diligent on-site supervision to ensure quality standards and project timelines are met.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Building Permit</h3>
+                        <p class="text-gray-600 leading-relaxed">Assistance with navigating regulations and securing all necessary building permits.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.75A.75.75 0 013 4.5h.75m0 0h.75A.75.75 0 015.25 6v.75m0 0H3.75m0 0A.75.75 0 013 6V5.25m0 0A.75.75 0 013.75 4.5h.75m0 0V3.75A.75.75 0 015.25 3h.75m0 0h.75a.75.75 0 01.75.75v.75m0 0h-.75m0 0a.75.75 0 01-.75-.75V3.75m0 0A.75.75 0 016 3h.75M6 6v.75a.75.75 0 01-.75.75H4.5m0 0V6m0 0h.75a.75.75 0 01.75.75v.75m0 0h-.75M6 6a.75.75 0 01.75-.75h.75M6 6H5.25m0 0V5.25A.75.75 0 016 4.5h.75M7.5 15h3.75m-3.75 0a.75.75 0 01.75-.75h2.25a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75h-2.25a.75.75 0 01-.75-.75v-.75z" /></svg></div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Valuation</h3>
+                        <p class="text-gray-600 leading-relaxed">Professional property and asset valuation services for financial and legal purposes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-brand-dark">Our Projects</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">A glimpse into our diverse portfolio of successfully completed projects.</p>
+                    <div class="mt-4 w-24 h-1 bg-brand-orange mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://picsum.photos/seed/project1/600/400" alt="Modern Residential Complex" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                            <h3 class="text-2xl font-bold">Modern Residential Complex</h3>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://picsum.photos/seed/project2/600/400" alt="Commercial Tower" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Site Supervision</p>
+                            <h3 class="text-2xl font-bold">Commercial Tower</h3>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://picsum.photos/seed/project3/600/400" alt="Industrial Warehouse" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Planning & Estimation</p>
+                            <h3 class="text-2xl font-bold">Industrial Warehouse</h3>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://picsum.photos/seed/project4/600/400" alt="Community Hall" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Structural Drawings</p>
+                            <h3 class="text-2xl font-bold">Community Hall</h3>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://picsum.photos/seed/project5/600/400" alt="Luxury Villa" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Building Permit</p>
+                            <h3 class="text-2xl font-bold">Luxury Villa</h3>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://picsum.photos/seed/project6/600/400" alt="Bridge Infrastructure" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Valuation</p>
+                            <h3 class="text-2xl font-bold">Bridge Infrastructure</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-brand-dark-2 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Get in Touch</h2>
+                    <p class="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">Have a project in mind? We'd love to hear from you.</p>
+                    <div class="mt-4 w-24 h-1 bg-brand-orange mx-auto"></div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-2/3 bg-white text-brand-dark p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                        <form id="contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-orange focus:outline-none" required />
+                                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-orange focus:outline-none" required />
+                            </div>
+                            <div class="mb-6">
+                                <input type="tel" name="phone" placeholder="Your Phone (Optional)" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-orange focus:outline-none" />
+                            </div>
+                            <div class="mb-6">
+                                <textarea name="message" placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-orange focus:outline-none" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-brand-orange text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="lg:w-1/3">
+                        <h3 class="text-2xl font-bold mb-6 text-white">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-brand-orange p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Address</h4>
+                                    <p class="text-gray-300">Central complex, Calicut Road<br>Perinthalmanna, Malappuram</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-brand-orange p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Phone</h4>
+                                    <p class="text-gray-300">+91 8606120554</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-brand-orange p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Email</h4>
+                                    <p class="text-gray-300">sushendhukc@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="md:col-span-1 lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <img src="assets/skc-logo.png" alt="SKC Logo" class="h-16 w-auto" />
+                        <div class="ml-3">
+                            <h3 class="text-2xl font-bold text-white">SKC Structural Consultants</h3>
+                            <p class="text-sm text-gray-400">Engineering a Stronger Future</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 max-w-md">
+                        Providing top-tier structural engineering solutions with a focus on quality, safety, and client satisfaction.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-brand-orange transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition-colors">Services</a></li>
+                        <li><a href="#about" class="hover:text-brand-orange transition-colors">About</a></li>
+                        <li><a href="#projects" class="hover:text-brand-orange transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                     <h4 class="text-white font-semibold text-lg mb-4">Follow Us</h4>
+                     <div class="flex space-x-4">
+                         <a href="#" aria-label="Instagram" class="bg-gray-700 hover:bg-brand-orange text-white p-3 rounded-full transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 14.784 2 14.43 2 12s.013-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363.416 2.427.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.047-1.023.058-1.351-.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                         </a>
+                     </div>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SKC Structural Consultants. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP and Lenis via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.45/dist/lenis.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

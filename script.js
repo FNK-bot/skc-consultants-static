@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = menuToggle.querySelector("svg"); // Target the whole SVG for simplicity
   const getAllSections = document.querySelectorAll("section");
+  const headerImage = document.getElementById("header-image");
 
   getAllSections.forEach((section) => {
     section.classList.add("scroll-mt-26");
@@ -12,11 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      header.classList.add("bg-[rgba(255,255,255,0)]");
-      header.classList.remove("bg-white");
+      //change header srx to logo-2
+      headerImage.src = "assets/SKC-LOGO-2.png";
+      header.classList.add("shadow-md");
+      header.classList.remove("");
     } else {
-      header.classList.remove("bg-[rgba(255,255,255,0)]");
-      header.classList.add("bg-white");
+      headerImage.src = "assets/SKC-LOGO-3.png";
+      header.classList.remove("shadow-md");
     }
   });
 

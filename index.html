@@ -48,18 +48,18 @@
     <!-- Header -->
     <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-30 ease-in-out bg-brand-transparent">
         <div class="container mx-auto px-6 py-1 flex justify-between items-center">
-            <a href="#home" class="flex items-center space-x-2">
+            <a href="#home" class="flex items-center space-x-3">
                 <img src="assets/SKC-LOGO-3.png" alt="SKC Logo" id="header-image" class="h-20 w-auto object-cover transition-all duration-300 ease-in-out" />
-                <span class="hidden sm:block text-xl font-bold ">SKC Structural Consultants</span>
+                <span class="hidden sm:block text-xl font-bold mt-1">SKC Structural Consultants</span>
             </a>
-            <nav class="hidden lg:flex items-center space-x-8">
+            <nav class="hidden lg:flex items-center space-x-8 mt-1">
                 <a href="#home" class=" hover:text-brand-orange font-medium transition-colors duration-300">Home</a>
                 <a href="#about" class=" hover:text-brand-orange font-medium transition-colors duration-300">About</a>
                 <a href="#services" class=" hover:text-brand-orange font-medium transition-colors duration-300">Services</a>
                 <a href="#projects" class=" hover:text-brand-orange font-medium transition-colors duration-300">Projects</a>
                 <a href="#contact" class=" hover:text-brand-orange font-medium transition-colors duration-300">Contact</a>
             </nav>
-            <a href="#contact" class="hidden lg:inline-block bg-brand-orange text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">Get a Quote</a>
+            <a href="#contact" class="hidden mt-1 lg:inline-block bg-brand-orange text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">Get a Quote</a>
             <div class="lg:hidden">
                 <button id="menu-toggle" class=" focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -84,7 +84,6 @@
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
             <img src="./assets/hero-bg.jpg" alt="Modern architectural structure" class="absolute inset-0 w-full h-full object-cover">
             <div class="relative z-20 container mx-auto px-6 text-center" id="hero-text">
-                <!-- <img src="/assets/logo-white.png" alt="icec logo" class="mx-auto mb-8 h-20 w-auto" /> -->
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">Engineering Structures <br> for a <span class="text-brand-orange" id="typed-text"></span></h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Your trusted partner in structural design, planning, and supervision, delivering excellence and precision in every project.</p>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Member of The Integrated Civil Engineers Council (ICEC)</p>
@@ -144,16 +143,16 @@
             <div class="container mx-auto px-6">
                 
                 <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/4">
+                    <div class="lg:w-1/2">
                         <img 
-                            src="https://picsum.photos/seed/engineer/600/700" 
+                            src="assets/engineer.JPG" 
                             alt="Er. Sushendhu K C" 
                             class="rounded-lg shadow-2xl object-cover w-full h-auto"
                         />
                     </div>
                     <div class="lg:w-1/2">
                         <h2 class="text-4xl font-bold text-brand-dark mb-4">Meet Our Lead Engineer</h2>
-                        <div class="mt-2 w-24 h-1 bg-brand-orange"></div>
+                        <div class="mt-2 w-full h-1 bg-brand-orange"></div>
                         <h3 class="text-3xl font-semibold text-brand-green mt-6">Er. Sushendhu K C</h3>
                         <p class="text-lg text-gray-700 font-medium mt-2">M. Tech Structural Engineer</p>
                         <ul class="mt-4 space-y-2 text-gray-600">
@@ -162,7 +161,7 @@
                             <li><span class="text-brand-orange mr-2">✓</span> Based in Perinthalmanna, Malappuram</li>
                         </ul>
                         <p class="mt-6 text-gray-700 leading-relaxed">
-                            With a passion for structural integrity and innovative design, Er. Sushendhu K C leads SKC Structural Consultants with a commitment to excellence. His extensive expertise and dedication to quality ensure that every project, big or small, is engineered for safety, durability, and efficiency. We believe in building strong relationships with our clients, founded on trust and transparent communication.
+                            With a passion for structural integrity and innovative design, Er. Sushendhu K C leads SKC Structural Consultants with a commitment to excellence. Her extensive expertise and dedication to quality ensure that every project, big or small, is engineered for safety, durability, and efficiency. We believe in building strong relationships with our clients, founded on trust and transparent communication.
                         </p>
                     </div>
                 </div>
@@ -171,7 +170,7 @@
 
 
         <!-- Projects Section -->
-        <section id="projects" class="py-20 bg-gray-100">
+        <section id="projects" class="py-20 bg-gray-300">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-brand-dark">Our Projects</h2>
@@ -180,51 +179,59 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://picsum.photos/seed/project1/600/400" alt="Modern Residential Complex" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <img src="/assets/projects/project-2.jpeg" alt="residential building at mangode" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
-                            <h3 class="text-2xl font-bold">Modern Residential Complex</h3>
+                            <h3 class="text-2xl font-bold">Residential building at Mangode</h3>
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://picsum.photos/seed/project2/600/400" alt="Commercial Tower" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <img src="/assets/projects/project-4.jpeg" alt="Residential Building at Tuvvur Malappuram" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Site Supervision</p>
-                            <h3 class="text-2xl font-bold">Commercial Tower</h3>
+                            <p class="text-sm text-brand-orange font-semibold">Planning</p>
+                            <h3 class="text-2xl font-bold">Residential Building at Tuvvur Malappuram</h3>
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://picsum.photos/seed/project3/600/400" alt="Industrial Warehouse" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <img src="/assets/projects/project-1.jpg" alt="Residential Building at Dindigul Tamil Nadu" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Planning & Estimation</p>
-                            <h3 class="text-2xl font-bold">Industrial Warehouse</h3>
+                            <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                            <h3 class="text-2xl font-bold">Residential Building at Dindigul Tamil Nadu</h3>
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://picsum.photos/seed/project4/600/400" alt="Community Hall" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <img src="/assets/projects/project-5.jpeg" alt="Commercial Building at Thiruvillwamala" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <p class="text-sm text-brand-orange font-semibold">Structural Drawings</p>
-                            <h3 class="text-2xl font-bold">Community Hall</h3>
+                            <h3 class="text-2xl font-bold">Commercial Building at Thiruvillwamala</h3>
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://picsum.photos/seed/project5/600/400" alt="Luxury Villa" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <img src="/assets/projects/project-6.jpeg" alt="Girls Hostel at ALUVA" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Building Permit</p>
-                            <h3 class="text-2xl font-bold">Luxury Villa</h3>
+                            <p class="text-sm text-brand-orange font-semibold">Structural Drawings</p>
+                            <h3 class="text-2xl font-bold">Girls Hostel at ALUVA</h3>
                         </div>
                     </div>
                     <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://picsum.photos/seed/project6/600/400" alt="Bridge Infrastructure" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                        <img src="/assets/projects/project-3.jpg" alt="Bridge Infrastructure" class="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Valuation</p>
-                            <h3 class="text-2xl font-bold">Bridge Infrastructure</h3>
+                            <p class="text-sm text-brand-orange font-semibold">Planning & Estimation</p>
+                            <h3 class="text-2xl font-bold">Residential Building</h3>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="/assets/projects/project-8.jpeg" alt="Recycling Tank at Cheekod" class="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-500"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                            <h3 class="text-2xl font-bold">Recycling Tank at Cheekode</h3>
                         </div>
                     </div>
                 </div>
@@ -242,7 +249,7 @@
                 <div class="flex flex-col lg:flex-row gap-12">
                     <div class="lg:w-2/3 bg-white text-brand-dark p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
-                        <form id="contact-form">
+                        <form id="contact-form"  action="https://formspree.io/f/xqadjjlv" method="POST">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                 <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-orange focus:outline-none" required />
                                 <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brand-orange focus:outline-none" required />
@@ -263,7 +270,7 @@
                                 <div class="bg-brand-orange p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Address</h4>
-                                    <p class="text-gray-300">Central complex, Calicut Road<br>Perinthalmanna, Malappuram</p>
+                                    <p class="text-gray-300">Central complex, Calicut Road, Traffic Junction , Perinthalmanna ,<br> Malappuram - 679322</p>
                                 </div>
                             </div>
                             <div class="flex items-start space-x-4">
@@ -277,7 +284,7 @@
                                 <div class="bg-brand-orange p-3 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Email</h4>
-                                    <p class="text-gray-300">sushendhukc@gmail.com</p>
+                                    <p class="text-gray-300">skcstructural@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -296,7 +303,7 @@
                     <div class="flex items-center mb-4">
                         <img src="assets/SKC-LOGO-3.png" alt="SKC Logo" class="h-30 w-40 object-cover" />
                         <div class="ml-3">
-                            <h3 class="text-2xl font-bold text-white">SKC Structural Consultants</h3>
+                            <h3 class="text-2xl font-bold text-white mt-5">SKC Structural Consultants</h3>
                             <p class="text-sm text-gray-400">Engineering a Stronger Future</p>
                         </div>
                     </div>
@@ -329,6 +336,11 @@
                             <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
                             </svg>
                         </a>
+                        <a href="https://www.facebook.com/share/1aZs1zeRB5/" aria-label="facebook" class="bg-gray-700 hover:bg-brand-orange text-white p-3 rounded-full transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                            <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"></path>
+                            </svg>
+                        </a>
                      </div>
                 </div>
                 </div>
@@ -345,7 +357,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.45/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>

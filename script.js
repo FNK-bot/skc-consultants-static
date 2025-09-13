@@ -7,20 +7,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const getAllSections = document.querySelectorAll("section");
   const headerImage = document.getElementById("header-image");
 
-  getAllSections.forEach((section) => {
-    section.classList.add("scroll-mt-26");
-  });
+  // getAllSections.forEach((section) => {
+  //   section.classList.add("scroll-mt-26");
+  // });
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      //change header srx to logo-2
-      headerImage.src = "assets/skc-logo-2.png";
-      header.classList.add("text-black");
-      header.classList.remove("text-white,shadow-md");
+    // if (window.scrollY > 50) {
+    //   //change header srx to logo-2
+    //   headerImage.src = "assets/skc-logo-2.png";
+    //   header.classList.add("text-black", "shadow-md");
+    //   header.classList.remove("text-white", "shadow-md");
+    // } else {
+    //   headerImage.src = "assets/SKC-LOGO-3.png";
+    //   header.classList.remove("text-black", "shadow-md");
+    //   header.classList.add("text-white");
+    // }
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      header.style.top = "-100px";
     } else {
-      headerImage.src = "assets/SKC-LOGO-3.png";
-      header.classList.remove("text-black");
-      header.classList.add("shadow-md,text-white");
+      header.style.top = "0";
     }
   });
 
@@ -42,14 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenu.classList.add("max-h-0");
       menuIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />`;
     });
-  });
-
-  // --- CONTACT FORM LOGIC ---
-  const contactForm = document.getElementById("contact-form");
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thank you for your message! We will get back to you soon.");
-    contactForm.reset();
   });
 
   // --- GSAP AND LENIS SETUP ---
@@ -108,5 +108,65 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 0.5,
     });
   }
+
+  //Form submission
+  const form = document.getElementById("contact-form");
+  const formContainer = form.parentElement;
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault(); // Stop the default form submission
+
+    const nameInput = form.querySelector('input[name="name"]');
+    const emailInput = form.querySelector('input[name="email"]');
+    const messageTextarea = form.querySelector('textarea[name="message"]');
+
+    // Simple validation for required fields
+    if (!nameInput.value || !emailInput.value || !messageTextarea.value) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please fill out all required fields!",
+      });
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        // Show a success message using Swal
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent!",
+          text: "Your message has been sent successfully. We will get back to you soon!",
+        });
+        // Optionally, clear the form after a successful submission
+        form.reset();
+      } else {
+        // Show a general error message using Swal
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! Please try again later.",
+        });
+      }
+    } catch (error) {
+      // Handle network or other errors with Swal
+      console.error("Error:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Network Error",
+        text: "There was a network error. Please check your connection and try again.",
+      });
+    }
+  });
 });
 ("");

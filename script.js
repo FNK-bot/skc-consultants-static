@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = menuToggle.querySelector("svg"); // Target the whole SVG for simplicity
+  const getAllSections = document.querySelectorAll("section");
+
+  getAllSections.forEach((section) => {
+    section.classList.add("scroll-mt-26");
+  });
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {

@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      header.classList.add("bg-transparent");
-      header.classList.remove("bg-white", "shadow-md");
+      header.classList.add("bg-[rgba(255,255,255,0)]");
+      header.classList.remove("bg-white");
     } else {
-      header.classList.remove("bg-transparent");
-      header.classList.add("bg-white", "shadow-md");
+      header.classList.remove("bg-[rgba(255,255,255,0)]");
+      header.classList.add("bg-white");
     }
   });
 

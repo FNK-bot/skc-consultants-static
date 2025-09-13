@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       //change header srx to logo-2
-      headerImage.src = "assets/SKC-LOGO-2.png";
+      headerImage.src = "assets/skc-logo-2.png";
       header.classList.add("text-black");
       header.classList.remove("text-white,shadow-md");
     } else {

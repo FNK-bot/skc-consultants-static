@@ -39,29 +39,29 @@
 
     <style type="text/tailwindcss">
         body {
-            @apply bg-brand-gray text-brand-dark font-sans;
+            @apply bg-brand-gray text-white font-sans;
         }
     </style>
 </head>
 <body>
 
     <!-- Header -->
-    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-brand-transparent">
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-30 ease-in-out bg-brand-transparent">
         <div class="container mx-auto px-6 py-1 flex justify-between items-center">
             <a href="#home" class="flex items-center space-x-2">
-                <img src="assets/SKC-LOGO-3.png" alt="SKC Logo" id="header-image" class="h-20 w-auto object-cover transition-all duration-300 " />
-                <span class="hidden sm:block text-xl font-bold text-brand-dark">SKC Structural Consultants</span>
+                <img src="assets/SKC-LOGO-3.png" alt="SKC Logo" id="header-image" class="h-20 w-auto object-cover transition-all duration-300 ease-in-out" />
+                <span class="hidden sm:block text-xl font-bold ">SKC Structural Consultants</span>
             </a>
             <nav class="hidden lg:flex items-center space-x-8">
-                <a href="#home" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Home</a>
-                <a href="#about" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">About</a>
-                <a href="#services" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Services</a>
-                <a href="#projects" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Projects</a>
-                <a href="#contact" class="text-brand-dark hover:text-brand-orange font-medium transition-colors duration-300">Contact</a>
+                <a href="#home" class=" hover:text-brand-orange font-medium transition-colors duration-300">Home</a>
+                <a href="#about" class=" hover:text-brand-orange font-medium transition-colors duration-300">About</a>
+                <a href="#services" class=" hover:text-brand-orange font-medium transition-colors duration-300">Services</a>
+                <a href="#projects" class=" hover:text-brand-orange font-medium transition-colors duration-300">Projects</a>
+                <a href="#contact" class=" hover:text-brand-orange font-medium transition-colors duration-300">Contact</a>
             </nav>
             <a href="#contact" class="hidden lg:inline-block bg-brand-orange text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">Get a Quote</a>
             <div class="lg:hidden">
-                <button id="menu-toggle" class="text-brand-dark focus:outline-none">
+                <button id="menu-toggle" class=" focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
@@ -87,7 +87,12 @@
                 <!-- <img src="/assets/logo-white.png" alt="icec logo" class="mx-auto mb-8 h-20 w-auto" /> -->
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">Engineering Structures <br> for a <span class="text-brand-orange" id="typed-text"></span></h1>
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Your trusted partner in structural design, planning, and supervision, delivering excellence and precision in every project.</p>
-                <img src="/assets/icec-logo-2.png" alt="icec logo" class="mx-auto mb-8 h-20 w-auto" />
+                <div class="flex flex-col lg:flex-row space-around items-center justify-center">
+                    <img src="/assets/icec-logo-2.png" alt="icec logo" class="mx-auto mb-8 h-20 w-auto " />
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200">Member of The Integrated Civil Engineers Council (ICEC)</p>
+                    <img src="/assets/icec.png" alt="icec logo" class="mx-auto mb-8 h-20 w-auto bg-blue-50 rounded-xl" />
+                </div>
+
             </div>
         </section>
 

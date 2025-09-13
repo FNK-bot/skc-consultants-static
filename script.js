@@ -78,4 +78,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    // --- TYPED.JS SETUP ---
+    const typed = new Typed('#typed-text', {
+        strings: ["Future Innovations", "Solid Foundations", "Creative Structures"],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true,
+        cursorChar: '_',
+    });
 });

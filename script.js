@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = menuToggle.querySelector("svg"); // Target the whole SVG for simplicity
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      header.classList.add("bg-white", "shadow-md");
-      header.classList.remove("bg-transparent");
-    } else {
-      header.classList.remove("bg-white", "shadow-md");
-      header.classList.add("bg-transparent");
-    }
-  });
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY > 50) {
+  //     header.classList.add("bg-white", "shadow-md");
+  //     header.classList.remove("bg-transparent");
+  //   } else {
+  //     header.classList.remove("bg-white", "shadow-md");
+  //     header.classList.add("bg-transparent");
+  //   }
+  // });
 
   menuToggle.addEventListener("click", () => {
     const isOpen = mobileMenu.classList.toggle("max-h-96");
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // --- HERO TEXT ANIMATION ---
-  const heroText = document.querySelector("#home .relative.z-20");
+  const heroText = document.querySelector("#home #hero-text");
   if (heroText) {
     gsap.from(heroText.children, {
       duration: 1,

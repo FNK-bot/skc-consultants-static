@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.scrollY > 50) {
       //change header srx to logo-2
       // headerImage.src = "assets/skc-logo-2.png";
+      headerImage.style.height = "60px";
       header.classList.remove("bg-brand-transparent");
       header.classList.add(
         // "text-black",
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       header.style.backgroundColor = "#000000c9 ";
     } else {
       // headerImage.src = "assets/SKC-LOGO-3.png";
+      headerImage.style.height = "80px";
       header.classList.remove(
         // "text-black",
         "shadow-md"
@@ -31,18 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.add("bg-brand-transparent");
     }
 
-    const currentScrollTop =
-      window.pageYOffset || document.documentElement.scrollTop;
+    // const currentScrollTop =
+    //   window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScrollTop > lastScrollTop) {
-      if (currentScrollTop > 20) {
-        header.style.top = "-100px";
-      }
-    } else {
-      header.style.top = "0";
-    }
+    // if (currentScrollTop > lastScrollTop) {
+    //   if (currentScrollTop > 20) {
+    //     header.style.top = "-100px";
+    //   }
+    // } else {
+    //   header.style.top = "0";
+    // }
 
-    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    // lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 
     // if (
     //   document.body.scrollTop > 20 ||

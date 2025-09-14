@@ -11,25 +11,49 @@ document.addEventListener("DOMContentLoaded", function () {
   //   section.classList.add("scroll-mt-26");
   // });
 
+  let lastScrollTop = 0;
+
   window.addEventListener("scroll", () => {
-    // if (window.scrollY > 50) {
-    //   //change header srx to logo-2
-    //   headerImage.src = "assets/skc-logo-2.png";
-    //   header.classList.add("text-black", "shadow-md");
-    //   header.classList.remove("text-white", "shadow-md");
-    // } else {
-    //   headerImage.src = "assets/SKC-LOGO-3.png";
-    //   header.classList.remove("text-black", "shadow-md");
-    //   header.classList.add("text-white");
-    // }
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      header.style.top = "-100px";
+    if (window.scrollY > 50) {
+      //change header srx to logo-2
+      headerImage.src = "assets/skc-logo-2.png";
+      header.classList.add(
+        "text-black",
+        "shadow-md",
+        "brand-transparent-scroll"
+      );
+      header.classList.remove("text-white", "brand-transparent");
+    } else {
+      headerImage.src = "assets/SKC-LOGO-3.png";
+      header.classList.remove(
+        "text-black",
+        "shadow-md",
+        "brand-transparent-scroll"
+      );
+      header.classList.add("text-white", "brand-transparent");
+    }
+
+    const currentScrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop > lastScrollTop) {
+      if (currentScrollTop > 20) {
+        header.style.top = "-100px";
+      }
     } else {
       header.style.top = "0";
     }
+
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+
+    // if (
+    //   document.body.scrollTop > 20 ||
+    //   document.documentElement.scrollTop > 20
+    // ) {
+    //   header.style.top = "-100px";
+    // } else {
+    //   header.style.top = "0";
+    // }
   });
 
   menuToggle.addEventListener("click", () => {

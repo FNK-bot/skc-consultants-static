@@ -7,30 +7,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const getAllSections = document.querySelectorAll("section");
   const headerImage = document.getElementById("header-image");
 
-  // getAllSections.forEach((section) => {
-  //   section.classList.add("scroll-mt-26");
-  // });
-
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       //change header srx to logo-2
-      headerImage.src = "assets/skc-logo-2.png";
+      // headerImage.src = "assets/skc-logo-2.png";
+      header.classList.remove("bg-brand-transparent");
       header.classList.add(
-        "text-black",
-        "shadow-md",
-        "brand-transparent-scroll"
+        // "text-black",
+        "shadow-md"
+        // "bg-sky-600"
       );
-      header.classList.remove("text-white", "brand-transparent");
+      header.style.backgroundColor = "#000000c9 ";
     } else {
-      headerImage.src = "assets/SKC-LOGO-3.png";
+      // headerImage.src = "assets/SKC-LOGO-3.png";
       header.classList.remove(
-        "text-black",
-        "shadow-md",
-        "brand-transparent-scroll"
+        // "text-black",
+        "shadow-md"
+        // "bg-sky-600"
       );
-      header.classList.add("text-white", "brand-transparent");
+      header.style.backgroundColor = "rgba(255, 255, 255, 0)";
+      header.classList.add("bg-brand-transparent");
     }
 
     const currentScrollTop =
@@ -184,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } catch (error) {
       // Handle network or other errors with Swal
-      console.error("Error:", error);
+      // console.error("Error:", error);
       Swal.fire({
         icon: "error",
         title: "Network Error",

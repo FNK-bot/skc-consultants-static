@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", () => {
+    document.getElementById("project-modal").classList.add("hidden");
     if (window.scrollY > 50) {
       //change header srx to logo-2
       // headerImage.src = "assets/skc-logo-2.png";
@@ -32,28 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
       header.style.backgroundColor = "rgba(255, 255, 255, 0)";
       header.classList.add("bg-brand-transparent");
     }
-
-    // const currentScrollTop =
-    //   window.pageYOffset || document.documentElement.scrollTop;
-
-    // if (currentScrollTop > lastScrollTop) {
-    //   if (currentScrollTop > 20) {
-    //     header.style.top = "-100px";
-    //   }
-    // } else {
-    //   header.style.top = "0";
-    // }
-
-    // lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-
-    // if (
-    //   document.body.scrollTop > 20 ||
-    //   document.documentElement.scrollTop > 20
-    // ) {
-    //   header.style.top = "-100px";
-    // } else {
-    //   header.style.top = "0";
-    // }
   });
 
   menuToggle.addEventListener("click", () => {
@@ -192,5 +171,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  // --- PROJECT MODAL LOGIC ---
+  const projectCards = document.querySelectorAll(".project-card");
+  const modal = document.getElementById("project-modal");
+  const modalClose = document.getElementById("modal-close");
+  const modalImage = document.getElementById("modal-image");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDescription = document.getElementById("modal-description");
+
+  projectCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const image = card.querySelector("img").src;
+      const title = card.querySelector("h3").innerText;
+      const description = card.querySelector("p").innerText;
+
+      modalImage.src = image;
+      modalTitle.innerText = title;
+      modalDescription.innerText = description;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    });
+  });
+
+  modalClose.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+  });
 });
-("");

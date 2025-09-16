@@ -165,6 +165,7 @@
                         <ul class="mt-4 space-y-2 text-gray-600">
                             <li><span class="text-brand-orange mr-2">✓</span> Engineer-A Certified</li>
                             <li><span class="text-brand-orange mr-2">✓</span> ICEC State Executive Member</li>
+                            <li><span class="text-brand-orange mr-2">✓</span> ICEC State Joint Convenor 2025-2027</li>
                             <li><span class="text-brand-orange mr-2">✓</span> Based in Perinthalmanna, Malappuram</li>
                         </ul>
                         <p class="mt-6 text-gray-700 leading-relaxed">
@@ -185,7 +186,7 @@
                     <div class="mt-4 w-24 h-1 bg-brand-orange mx-auto"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                         <img src="/assets/projects/project-2.jpeg" alt="residential building at mangode" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -193,15 +194,15 @@
                             <h3 class="text-2xl font-bold">Residential building at Mangode</h3>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="/assets/projects/project-4.jpeg" alt="Residential Building at Tuvvur Malappuram" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="/assets/projects/project-4.jpeg" alt="Residential Building at Tuvvur Malappuram" class="w-full h-full object-cover transform group-hover:.scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
                             <p class="text-sm text-brand-orange font-semibold">Planning</p>
                             <h3 class="text-2xl font-bold">Residential Building at Tuvvur Malappuram</h3>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                         <img src="/assets/projects/project-1.jpg" alt="Residential Building at Dindigul Tamil Nadu" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -209,7 +210,7 @@
                             <h3 class="text-2xl font-bold">Residential Building at Dindigul Tamil Nadu</h3>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                         <img src="/assets/projects/project-5.jpeg" alt="Commercial Building at Thiruvillwamala" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -217,7 +218,7 @@
                             <h3 class="text-2xl font-bold">Commercial Building at Thiruvillwamala</h3>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                         <img src="/assets/projects/project-6.jpeg" alt="Girls Hostel at ALUVA" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -225,7 +226,7 @@
                             <h3 class="text-2xl font-bold">Girls Hostel at ALUVA</h3>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                         <img src="/assets/projects/project-3.jpg" alt="Bridge Infrastructure" class="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -233,7 +234,7 @@
                             <h3 class="text-2xl font-bold">Residential Building</h3>
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                         <img src="/assets/projects/project-8.jpeg" alt="Recycling Tank at Cheekod" class="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-6 text-white">
@@ -367,5 +368,18 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
+
+    <!-- Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-2xl  p-8 max-w-2xl w-full relative ">
+            <button id="modal-close" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <img id="modal-image" src="" alt="Project Image" class="max-w-full max-h-84 object-scale-down shadow-2xl rounded-md  rounded-t-lg mb-4">
+            <h3 id="modal-title" class="text-xl font-bold text-brand-dark mb-2"></h3>
+            <p id="modal-description" class="text-gray-600"></p>
+        </div>
+    </div>
+
 </body>
 </html>

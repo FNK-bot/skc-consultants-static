@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
 
   window.addEventListener("scroll", () => {
-    document.getElementById("project-modal").classList.add("hidden");
     if (window.scrollY > 50) {
       //change header srx to logo-2
       // headerImage.src = "assets/skc-logo-2.png";

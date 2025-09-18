@@ -140,6 +140,15 @@
                         <h3 class="text-2xl font-bold text-brand-dark mb-3">Valuation</h3>
                         <p class="text-gray-600 leading-relaxed">Professional property and asset valuation services for financial and legal purposes.</p>
                     </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.75A2.25 2.25 0 0110.5 14h3a2.25 2.25 0 012.25 2.25V21m-4.5 0H12H8.25zM12 3L2.25 9.75V21h19.5V9.75L12 3z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Interior Designing</h3>
+                        <p class="text-gray-600 leading-relaxed">Creative and functional interior designs to transform your space into a beautiful and practical environment.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,79 +181,141 @@
                         </p>
                     </div>
                 </div>
+                <div class="mt-12 shadow-2xl bg-[url(./assets/engineer.webp)] bg-cover bg-center relative">
+                    <div class="absolute inset-0 backdrop-blur-sm bg-gray-900/10"></div>
+                    <div class="relative max-w-4xl max-h-2xl mx-auto py-12">
+                        <div id="carousel-container" class="overflow-hidden rounded-lg bg-white p-4 shadow-lg">
+                            <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                                <img src="assets/carousel/image-1.avif" alt="Carousel Image 1" class="w-full flex-shrink-0">
+                                <img src="assets/carousel/image-2.webp" alt="Carousel Image 2" class="w-full flex-shrink-0">
+                                <img src="assets/carousel/image-3.webp" alt="Carousel Image 3" class="w-full flex-shrink-0">
+                                <img src="assets/carousel/image-4.webp" alt="Carousel Image 4" class="w-full flex-shrink-0">
+                            </div>
+                        </div>
+                        <button id="prev" class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                        <button id="next" class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
 
         <!-- Projects Section -->
-        <section id="projects" class="py-20 bg-gray-300">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-brand-dark">Our Projects</h2>
-                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">A glimpse into our diverse portfolio of successfully completed projects.</p>
-                    <div class="mt-4 w-24 h-1 bg-brand-orange mx-auto"></div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-2.webp" alt="residential building at mangode" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
-                            <h3 class="text-2xl font-bold">Residential building at Mangode</h3>
-                        </div>
-                    </div>
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-4.webp" alt="Residential Building at Tuvvur Malappuram" class="w-full h-full object-cover transform group-hover:.scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Planning</p>
-                            <h3 class="text-2xl font-bold">Residential Building at Tuvvur Malappuram</h3>
-                        </div>
-                    </div>
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-1.webp" alt="Residential Building at Dindigul Tamil Nadu" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
-                            <h3 class="text-2xl font-bold">Residential Building at Dindigul Tamil Nadu</h3>
-                        </div>
-                    </div>
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-5.webp" alt="Commercial Building at Thiruvillwamala" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Structural Design & Drawings</p>
-                            <h3 class="text-2xl font-bold">Commercial Building at Thiruvillwamala</h3>
-                        </div>
-                    </div>
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-6.webp" alt="Girls Hostel at ALUVA" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Structural Design & Drawings</p>
-                            <h3 class="text-2xl font-bold">Girls Hostel at ALUVA</h3>
-                        </div>
-                    </div>
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-3.webp" alt="Bridge Infrastructure" class="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Estimation</p>
-                            <h3 class="text-2xl font-bold">Residential Building</h3>
-                        </div>
-                    </div>
-                    <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img src="/assets/projects/project-8.webp" alt="Recycling Tank at Cheekod" class="w-full h-full object-fill transform group-hover:scale-110 transition-transform duration-500"/>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6 text-white">
-                            <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
-                            <h3 class="text-2xl font-bold">Recycling Tank at Cheekode</h3>
-                        </div>
-                    </div>
+<section id="projects" class="py-20 bg-gray-300">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-brand-dark">Our Projects</h2>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">A glimpse into our diverse portfolio of successfully completed projects.</p>
+            <div class="mt-4 w-24 h-1 bg-brand-orange mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-2.webp" alt="residential building at mangode" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">Residential building at Mangode</h3>
                 </div>
             </div>
-        </section>
-
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-4.webp" alt="Residential Building at Tuvvur Malappuram" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Planning</p>
+                    <h3 class="text-2xl font-bold">Residential Building at Tuvvur Malappuram</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-1.webp" alt="Residential Building at Dindigul Tamil Nadu" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">Residential Building at Dindigul Tamil Nadu</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-5.webp" alt="Commercial Building at Thiruvillwamala" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design & Drawings</p>
+                    <h3 class="text-2xl font-bold">Commercial Building at Thiruvillwamala</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-6.webp" alt="Girls Hostel at ALUVA" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design & Drawings</p>
+                    <h3 class="text-2xl font-bold">Girls Hostel at ALUVA</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-3.webp" alt="Bridge Infrastructure" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Estimation</p>
+                    <h3 class="text-2xl font-bold">Residential Building</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-12.webp" alt="WAFA Hospital Building Wandoor" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">WAFA Hospital Building Wandoor</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-8.webp" alt="Recycling Tank at Cheekod" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">Recycling Tank at Cheekode</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-7.webp" alt="Residential Owned by Thomson Angamaly" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">Residential Owned by Thomson Angamaly</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-9.webp" alt="Residential Building" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">Residential Building</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-10.webp" alt="Residential Building" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Structural Design</p>
+                    <h3 class="text-2xl font-bold">Residential Building</h3>
+                </div>
+            </div>
+            <div class="group project-card relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72">
+                <img src="/assets/projects/project-11.webp" alt="Retaining Wall at Malappuram" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 text-white">
+                    <p class="text-sm text-brand-orange font-semibold">Planning</p>
+                    <h3 class="text-2xl font-bold">Retaining Wall at Malappuram</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Contact Section -->
         <section id="contact" class="py-20 bg-brand-dark-2 text-white">
             <div class="container mx-auto px-6">
@@ -367,6 +438,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
+    
 
     <!-- Modal -->
     <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">

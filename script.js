@@ -205,4 +205,34 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.classList.remove("flex");
     }
   });
+
+  // --- CAROUSEL LOGIC ---
+  const carousel = document.getElementById('carousel');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+  if (carousel) {
+    const images = carousel.children;
+    const imageCount = images.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+        updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % imageCount;
+        updateCarousel();
+    });
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % imageCount;
+        updateCarousel();
+    }, 3000);
+  }
 });
